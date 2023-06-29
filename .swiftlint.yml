@@ -1,0 +1,15 @@
+force_cast: error
+force_try: error
+
+included:
+  - Sources/SDKHttpCore
+
+line_length:
+  warning: 120
+  error: 140
+
+identifier_name:
+  min_length: 3
+  excluded:
+    - id
+    - ok

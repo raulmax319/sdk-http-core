@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "265BDCA5-8C72-4F97-BFEC-5FCE5BD0FBF5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:",
+          "identifier" : "SDKHttpCore",
+          "name" : "SDKHttpCore"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SDKHttpCoreTests",
+        "name" : "SDKHttpCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
