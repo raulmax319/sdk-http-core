@@ -1,0 +1,47 @@
+targets:
+  SDKHttpCore_Example:
+    type: application
+    platform: iOS
+
+    sources:
+      - path: Sources/SDKHttpCore
+        name: Example for SDKHttpCore
+      - path: ../
+        name: Podspec Metadata
+        includes:
+          - SDKHttpCore.podspec
+          - README.md
+          - LICENSE
+
+    dependencies:
+      - package: SDKHttpCore
+
+    settings:
+      INFOPLIST_FILE: Sources/SDKHttpCore/Supporting Files/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: org.demo.$(PRODUCT_NAME:rfc1034identifier)
+
+    prebuildScripts:
+      - name: Integrate Swiftlint
+        script: sh scripts/swiftlint.sh
+        showEnvVars: YES
+        basedOnDependencyAnalysis: NO
+
+  SDKHttpCore_Tests:
+    type: bundle.unit-test
+    platform: iOS
+
+    sources:
+      - Sources/Tests
+
+    settings:
+      INFOPLIST_FILE: Sources/Tests/Info.plist
+      PRODUCT_BUNDLE_IDENTIFIER: org.$(PRODUCT_NAME:rfc1034identifier)
+
+    dependencies:
+      - target: SDKHttpCore_Example
+
+    prebuildScripts:
+      - name: Integrate Swiftlint
+        script: sh scripts/swiftlint.sh
+        showEnvVars: YES
+        basedOnDependencyAnalysis: NO

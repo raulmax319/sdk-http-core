@@ -1,0 +1,22 @@
+schemes:
+  SDKHttpCore:
+    shared: YES
+    buildAction: build
+    testAction: test
+    runAction: run
+    archiveAction: archive
+    profileAction: profile
+    analyzeAction: analyze
+    build:
+      targets:
+        SDKHttpCore_Example: all
+        SDKHttpCore_Tests: [run, test]
+    test:
+      gatherCoverageData: YES
+      coverageTargets:
+        - package: SDKHttpCore/SDKHttpCoreTests
+      targets:
+        - SDKHttpCore_Tests
+        - package: SDKHttpCore/SDKHttpCoreTests
+          parallelizable: YES
+          randomExecutionOrdering: YES
