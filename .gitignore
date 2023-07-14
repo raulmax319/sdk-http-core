@@ -20,6 +20,7 @@ DerivedData
 .bundle
 Carthage/Build
 Pods/
+!Example/Sources/SDKHttpCore/Supporting Files/Info.plist
 *.xcworkspace
 *.xcodeproj
 .build
@@ -27,3 +28,4 @@ Pods/
 .derivedData
 *.xcframework
 *.zip
+Info.plist
