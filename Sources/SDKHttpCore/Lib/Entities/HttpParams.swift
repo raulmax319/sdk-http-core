@@ -7,8 +7,18 @@
 
 import Foundation
 
-public struct HttpParams<T: Encodable> {
+public struct HttpParams {
   public var headers: [String: String]?
   public var method: HttpMethod
-  public var body: T?
+  public var body: Data?
+
+  public init(
+    headers: [String : String]? = nil,
+    method: HttpMethod = .GET,
+    body: Data? = nil
+  ) {
+    self.headers = headers
+    self.method = method
+    self.body = body
+  }
 }

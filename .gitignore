@@ -22,3 +22,8 @@ Carthage/Build
 Pods/
 *.xcworkspace
 *.xcodeproj
+.build
+.archive
+.derivedData
+$NAME.xcframework
+*.zip

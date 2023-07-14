@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/raulmax319/SDKHttpCore'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Raul Max' => 'github.com/raulmax319' }
-  s.source           = { :git => 'https://github.com/raulmax319/SDKHttpCore.git', :tag => s.version.to_s }
+  s.source           = { :http => 'https://github.com/raulmax319/ziiip/raw/main/SDKHttpCore.xcframework.zip' }
   s.ios.deployment_target = '12.0'
   s.default_subspec = 'Release'
 

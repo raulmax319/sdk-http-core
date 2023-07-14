@@ -11,6 +11,7 @@ let package = Package(
   products: [
     .library(
       name: "SDKHttpCore",
+      type: .dynamic,
       targets: ["SDKHttpCore"]
     )
   ],

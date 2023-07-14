@@ -1,0 +1,23 @@
+name: SDKHttpCore
+
+targets:
+  SDKHttpCore:
+    type: framework
+    platform: iOS
+
+    sources: Sources/SDKHttpCore/Lib
+
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.sdk.http.core
+
+    info:
+      path: Info.plist
+      properties:
+        CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+        CFBundleDevelopmentRegion: en
+        CFBundleExecutable: $(EXECUTABLE_NAME)
+        CFBundleInfoDictionaryVersion: 6.0
+        CFBundleName: $(PRODUCT_NAME)
+        CFBundlePackageType: FMWK
+        CFBundleShortVersionString: 1.0
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-final public class SDKHttpCore: NSObject {
+final public class HttpCore: NSObject {
   private let url: URL
   private let encoder = JSONEncoder()
   private let decoder = JSONDecoder()
@@ -21,16 +21,16 @@ final public class SDKHttpCore: NSObject {
     self.manager = manager
   }
 
-  private func setupRequest<T: Encodable>(with params: HttpParams<T>) {
+  private func setupRequest(with params: HttpParams) {
     request.httpMethod = params.method.rawValue
-    request.httpBody = try? encoder.encode(params.body)
+    request.httpBody = params.body
     request.allHTTPHeaderFields = params.headers
   }
 }
 
-extension SDKHttpCore: HttpRequest {
-  public func request<T: Encodable>(
-    params: HttpParams<T>,
+extension HttpCore: HttpRequest {
+  public func request(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<Data>, HttpError>) -> Void
   ) {
     setupRequest(with: params)
@@ -48,8 +48,8 @@ extension SDKHttpCore: HttpRequest {
     }
   }
 
-  public func request<T: Encodable, R: Decodable>(
-    params: HttpParams<T>,
+  public func request<R: Decodable>(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<R>, HttpError>) -> Void
   ) {
     setupRequest(with: params)

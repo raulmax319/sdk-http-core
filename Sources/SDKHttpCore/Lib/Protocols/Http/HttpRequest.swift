@@ -8,12 +8,12 @@
 import Foundation
 
 public protocol HttpRequest: AnyObject {
-  func request<T: Encodable>(
-    params: HttpParams<T>,
+  func request(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<Data>, HttpError>) -> Void
   )
-  func request<T: Encodable, R: Decodable>(
-    params: HttpParams<T>,
+  func request<R: Decodable>(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<R>, HttpError>) -> Void
   )
 }

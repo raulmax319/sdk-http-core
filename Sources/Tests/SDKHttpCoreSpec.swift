@@ -29,7 +29,7 @@ final class SDKHttpCoreSpec: XCTestCase {
     configuration.protocolClasses = [URLProtocolMock.self]
     url = URL(string: "https://localmock:443")
     manager = NetworkSessionManagerMock()
-    sut = SDKHttpCore(with: url, manager: manager)
+    sut = HttpCore(with: url, manager: manager)
     request = URLRequest(url: URL(string: "https://localmock:443")!)
   }
 
@@ -54,7 +54,7 @@ final class SDKHttpCoreSpec: XCTestCase {
 
     let params = HttpParams(
       method: .GET,
-      body: MockExample(key: "value")
+      body: try? JSONEncoder().encode(MockExample(key: "value"))
     )
 
     requestWithDataResult(params: params) { result in
@@ -86,7 +86,7 @@ final class SDKHttpCoreSpec: XCTestCase {
 
     let params = HttpParams(
       method: .GET,
-      body: MockExample(key: "value")
+      body: try? JSONEncoder().encode(MockExample(key: "value"))
     )
 
     requestWithDataResult(params: params) { result in
@@ -136,7 +136,7 @@ final class SDKHttpCoreSpec: XCTestCase {
 
     let params = HttpParams(
       method: .GET,
-      body: MockExample(key: "123")
+      body: try? JSONEncoder().encode(MockExample(key: "123"))
     )
 
     requestWithDecodableResult(params: params) { result in
@@ -171,7 +171,7 @@ final class SDKHttpCoreSpec: XCTestCase {
 
     let params = HttpParams(
       method: .GET,
-      body: MockExample(key: "value")
+      body: try? JSONEncoder().encode(MockExample(key: "value"))
     )
 
     requestWithDecodableResult(params: params) { result in
@@ -189,15 +189,15 @@ final class SDKHttpCoreSpec: XCTestCase {
 }
 
 extension SDKHttpCoreSpec {
-  func requestWithDataResult<T: Encodable>(
-    params: HttpParams<T>,
+  func requestWithDataResult(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<Data>, HttpError>) -> Void
   ) {
     sut.request(params: params, completion: completion)
   }
 
-  func requestWithDecodableResult<T: Encodable>(
-    params: HttpParams<T>,
+  func requestWithDecodableResult(
+    params: HttpParams,
     completion: @escaping (Result<HttpResponse<MockExample>, HttpError>) -> Void
   ) {
     sut.request(params: params, completion: completion)

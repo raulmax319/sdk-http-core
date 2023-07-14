@@ -8,6 +8,6 @@
 import Foundation
 
 public struct HttpResponse<T: Decodable>: Decodable {
-  var data: T?
-  var statusCode: HttpStatusCode
+  public var data: T?
+  public var statusCode: HttpStatusCode
 }
