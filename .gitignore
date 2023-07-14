@@ -25,5 +25,5 @@ Pods/
 .build
 .archive
 .derivedData
-$NAME.xcframework
+*.xcframework
 *.zip

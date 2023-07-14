@@ -8,16 +8,17 @@ targets:
     sources: Sources/SDKHttpCore/Lib
 
     settings:
+      GENERATE_INFOPLIST_FILE: YES
       PRODUCT_BUNDLE_IDENTIFIER: com.sdk.http.core
 
-    info:
-      path: Info.plist
-      properties:
-        CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
-        CFBundleDevelopmentRegion: en
-        CFBundleExecutable: $(EXECUTABLE_NAME)
-        CFBundleInfoDictionaryVersion: 6.0
-        CFBundleName: $(PRODUCT_NAME)
-        CFBundlePackageType: FMWK
-        CFBundleShortVersionString: 1.0
-        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+    # info:
+    #   path: Info.plist
+    #   properties:
+    #     CFBundleIdentifier: $(PRODUCT_BUNDLE_IDENTIFIER)
+    #     CFBundleDevelopmentRegion: en
+    #     CFBundleExecutable: $(EXECUTABLE_NAME)
+    #     CFBundleInfoDictionaryVersion: 6.0
+    #     CFBundleName: $(PRODUCT_NAME)
+    #     CFBundlePackageType: FMWK
+    #     CFBundleShortVersionString: 1.0
+    #     CFBundleVersion: $(CURRENT_PROJECT_VERSION)
