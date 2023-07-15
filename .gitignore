@@ -29,3 +29,4 @@ Pods/
 # *.xcframework
 # *.zip
 Info.plist
+!SDKHttpCore.xcframework/Info.plist
