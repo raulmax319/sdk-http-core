@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SDKHttpCore'
-  s.version          = '0.1.0-rc.2'
+  s.version          = '0.1.0-rc.3'
   s.summary          = 'A short description of SDKHttpCore.'
   s.homepage         = 'https://github.com/raulmax319/SDKHttpCore'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
