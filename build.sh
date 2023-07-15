@@ -11,7 +11,6 @@ rm -rf $NAME.xcframework
 rm -rf *.zip
 rm -f Info.plist
 
-swift build
 swift build -c release
 xcodegen
 
