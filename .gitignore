@@ -27,6 +27,6 @@ Pods/
 .archive
 .derivedData
 # *.xcframework
-# *.zip
+*.zip
 Info.plist
 !SDKHttpCore.xcframework/Info.plist
