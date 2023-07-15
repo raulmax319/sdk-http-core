@@ -26,6 +26,6 @@ Pods/
 .build
 .archive
 .derivedData
-*.xcframework
+# *.xcframework
 *.zip
 Info.plist

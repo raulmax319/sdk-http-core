@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-ios16.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SDKHttpCore
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+public struct HttpError : Swift.Error {
+  public var message: Swift.String {
+    get
+  }
+}
+public enum HttpMethod : Swift.String {
+  case GET
+  case POST
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct HttpParams {
+  public var headers: [Swift.String : Swift.String]?
+  public var method: SDKHttpCore.HttpMethod
+  public var body: Foundation.Data?
+  public init(headers: [Swift.String : Swift.String]? = nil, method: SDKHttpCore.HttpMethod = .GET, body: Foundation.Data? = nil)
+}
+public protocol HttpRequest : AnyObject {
+  func request(params: SDKHttpCore.HttpParams, completion: @escaping (Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>) -> Swift.Void)
+  func request<R>(params: SDKHttpCore.HttpParams, completion: @escaping (Swift.Result<SDKHttpCore.HttpResponse<R>, SDKHttpCore.HttpError>) -> Swift.Void) where R : Swift.Decodable
+}
+public struct HttpResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public var data: T?
+  public var statusCode: SDKHttpCore.HttpStatusCode
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum HttpStatusCode : Swift.Int, Swift.Decodable {
+  case ok
+  case unavailable
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc final public class NetworkSessionManager : ObjectiveC.NSObject, SDKHttpCore.SessionManager {
+  public init(configuration: Foundation.URLSessionConfiguration = .default)
+  @objc deinit
+}
+extension SDKHttpCore.NetworkSessionManager {
+  final public func data(with request: Foundation.URLRequest, completion: @escaping (Foundation.Data?, Foundation.HTTPURLResponse?, (any Swift.Error)?) -> Swift.Void)
+}
+extension SDKHttpCore.NetworkSessionManager : Foundation.URLSessionDelegate {
+  @objc final public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+}
+@objc final public class HttpCore : ObjectiveC.NSObject {
+  public init(with url: Foundation.URL, manager: any SDKHttpCore.SessionManager = NetworkSessionManager())
+  @objc deinit
+}
+extension SDKHttpCore.HttpCore : SDKHttpCore.HttpRequest {
+  final public func request(params: SDKHttpCore.HttpParams, completion: @escaping (Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>) -> Swift.Void)
+  final public func request<R>(params: SDKHttpCore.HttpParams, completion: @escaping (Swift.Result<SDKHttpCore.HttpResponse<R>, SDKHttpCore.HttpError>) -> Swift.Void) where R : Swift.Decodable
+}
+public protocol SessionManager : AnyObject {
+  func data(with request: Foundation.URLRequest, completion: @escaping (Foundation.Data?, Foundation.HTTPURLResponse?, (any Swift.Error)?) -> Swift.Void)
+}
+extension SDKHttpCore.HttpMethod : Swift.Equatable {}
+extension SDKHttpCore.HttpMethod : Swift.Hashable {}
+extension SDKHttpCore.HttpMethod : Swift.RawRepresentable {}
+extension SDKHttpCore.HttpStatusCode : Swift.Equatable {}
+extension SDKHttpCore.HttpStatusCode : Swift.Hashable {}
+extension SDKHttpCore.HttpStatusCode : Swift.RawRepresentable {}

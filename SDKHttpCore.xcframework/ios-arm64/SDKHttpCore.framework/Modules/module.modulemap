@@ -1,0 +1,4 @@
+framework module SDKHttpCore {
+  header "SDKHttpCore-Swift.h"
+  requires objc
+}

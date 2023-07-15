@@ -1,0 +1,2203 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpError",
+        "printedName": "HttpError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore9HttpErrorV7messageSSvp",
+            "mangledName": "$s11SDKHttpCore9HttpErrorV7messageSSvp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore9HttpErrorV7messageSSvg",
+                "mangledName": "$s11SDKHttpCore9HttpErrorV7messageSSvg",
+                "moduleName": "SDKHttpCore",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SDKHttpCore9HttpErrorV",
+        "mangledName": "$s11SDKHttpCore9HttpErrorV",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpMethod",
+        "printedName": "HttpMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "GET",
+            "printedName": "GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SDKHttpCore.HttpMethod.Type) -> SDKHttpCore.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "SDKHttpCore.HttpMethod",
+                    "usr": "s:11SDKHttpCore10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SDKHttpCore.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "SDKHttpCore.HttpMethod",
+                        "usr": "s:11SDKHttpCore10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SDKHttpCore10HttpMethodO3GETyA2CmF",
+            "mangledName": "$s11SDKHttpCore10HttpMethodO3GETyA2CmF",
+            "moduleName": "SDKHttpCore"
+          },
+          {
+            "kind": "Var",
+            "name": "POST",
+            "printedName": "POST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SDKHttpCore.HttpMethod.Type) -> SDKHttpCore.HttpMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "SDKHttpCore.HttpMethod",
+                    "usr": "s:11SDKHttpCore10HttpMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SDKHttpCore.HttpMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpMethod",
+                        "printedName": "SDKHttpCore.HttpMethod",
+                        "usr": "s:11SDKHttpCore10HttpMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SDKHttpCore10HttpMethodO4POSTyA2CmF",
+            "mangledName": "$s11SDKHttpCore10HttpMethodO4POSTyA2CmF",
+            "moduleName": "SDKHttpCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SDKHttpCore.HttpMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "SDKHttpCore.HttpMethod",
+                    "usr": "s:11SDKHttpCore10HttpMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore10HttpMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11SDKHttpCore10HttpMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "SDKHttpCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore10HttpMethodO8rawValueSSvp",
+            "mangledName": "$s11SDKHttpCore10HttpMethodO8rawValueSSvp",
+            "moduleName": "SDKHttpCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpMethodO8rawValueSSvg",
+                "mangledName": "$s11SDKHttpCore10HttpMethodO8rawValueSSvg",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11SDKHttpCore10HttpMethodO",
+        "mangledName": "$s11SDKHttpCore10HttpMethodO",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpParams",
+        "printedName": "HttpParams",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvp",
+            "mangledName": "$s11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvg",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvg",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvs",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvs",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvM",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV7headersSDyS2SGSgvM",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpMethod",
+                "printedName": "SDKHttpCore.HttpMethod",
+                "usr": "s:11SDKHttpCore10HttpMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvp",
+            "mangledName": "$s11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "SDKHttpCore.HttpMethod",
+                    "usr": "s:11SDKHttpCore10HttpMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvg",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvg",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpMethod",
+                    "printedName": "SDKHttpCore.HttpMethod",
+                    "usr": "s:11SDKHttpCore10HttpMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvs",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvs",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvM",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV6methodAA0C6MethodOvM",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvp",
+            "mangledName": "$s11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvg",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvg",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvs",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvs",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvM",
+                "mangledName": "$s11SDKHttpCore10HttpParamsV4body10Foundation4DataVSgvM",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(headers:method:body:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpParams",
+                "printedName": "SDKHttpCore.HttpParams",
+                "usr": "s:11SDKHttpCore10HttpParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpMethod",
+                "printedName": "SDKHttpCore.HttpMethod",
+                "hasDefaultArg": true,
+                "usr": "s:11SDKHttpCore10HttpMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore10HttpParamsV7headers6method4bodyACSDyS2SGSg_AA0C6MethodO10Foundation4DataVSgtcfc",
+            "mangledName": "$s11SDKHttpCore10HttpParamsV7headers6method4bodyACSDyS2SGSg_AA0C6MethodO10Foundation4DataVSgtcfc",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SDKHttpCore10HttpParamsV",
+        "mangledName": "$s11SDKHttpCore10HttpParamsV",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpRequest",
+        "printedName": "HttpRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(params:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpParams",
+                "printedName": "SDKHttpCore.HttpParams",
+                "usr": "s:11SDKHttpCore10HttpParamsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpResponse",
+                        "printedName": "SDKHttpCore.HttpResponse<Foundation.Data>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:11SDKHttpCore12HttpResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpError",
+                        "printedName": "SDKHttpCore.HttpError",
+                        "usr": "s:11SDKHttpCore9HttpErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore11HttpRequestP7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVy10Foundation4DataVGAA0C5ErrorVGctF",
+            "mangledName": "$s11SDKHttpCore11HttpRequestP7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVy10Foundation4DataVGAA0C5ErrorVGctF",
+            "moduleName": "SDKHttpCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SDKHttpCore.HttpRequest>",
+            "sugared_genericSig": "<Self where Self : SDKHttpCore.HttpRequest>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(params:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpParams",
+                "printedName": "SDKHttpCore.HttpParams",
+                "usr": "s:11SDKHttpCore10HttpParamsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<SDKHttpCore.HttpResponse<τ_1_0>, SDKHttpCore.HttpError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<SDKHttpCore.HttpResponse<τ_1_0>, SDKHttpCore.HttpError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpResponse",
+                        "printedName": "SDKHttpCore.HttpResponse<τ_1_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_1_0"
+                          }
+                        ],
+                        "usr": "s:11SDKHttpCore12HttpResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpError",
+                        "printedName": "SDKHttpCore.HttpError",
+                        "usr": "s:11SDKHttpCore9HttpErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore11HttpRequestP7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVyqd__GAA0C5ErrorVGctSeRd__lF",
+            "mangledName": "$s11SDKHttpCore11HttpRequestP7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVyqd__GAA0C5ErrorVGctSeRd__lF",
+            "moduleName": "SDKHttpCore",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SDKHttpCore.HttpRequest, τ_1_0 : Swift.Decodable>",
+            "sugared_genericSig": "<Self, R where Self : SDKHttpCore.HttpRequest, R : Swift.Decodable>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11SDKHttpCore11HttpRequestP",
+        "mangledName": "$s11SDKHttpCore11HttpRequestP",
+        "moduleName": "SDKHttpCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpResponse",
+        "printedName": "HttpResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore12HttpResponseV4dataxSgvp",
+            "mangledName": "$s11SDKHttpCore12HttpResponseV4dataxSgvp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV4dataxSgvg",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV4dataxSgvg",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV4dataxSgvs",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV4dataxSgvs",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV4dataxSgvM",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV4dataxSgvM",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statusCode",
+            "printedName": "statusCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpStatusCode",
+                "printedName": "SDKHttpCore.HttpStatusCode",
+                "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovp",
+            "mangledName": "$s11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovp",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpStatusCode",
+                    "printedName": "SDKHttpCore.HttpStatusCode",
+                    "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovg",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovg",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpStatusCode",
+                    "printedName": "SDKHttpCore.HttpStatusCode",
+                    "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovs",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0Ovs",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0OvM",
+                "mangledName": "$s11SDKHttpCore12HttpResponseV10statusCodeAA0c6StatusF0OvM",
+                "moduleName": "SDKHttpCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+                "sugared_genericSig": "<T where T : Swift.Decodable>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpResponse",
+                "printedName": "SDKHttpCore.HttpResponse<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11SDKHttpCore12HttpResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore12HttpResponseV4fromACyxGs7Decoder_p_tKcfc",
+            "mangledName": "$s11SDKHttpCore12HttpResponseV4fromACyxGs7Decoder_p_tKcfc",
+            "moduleName": "SDKHttpCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<T where T : Swift.Decodable>",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11SDKHttpCore12HttpResponseV",
+        "mangledName": "$s11SDKHttpCore12HttpResponseV",
+        "moduleName": "SDKHttpCore",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+        "sugared_genericSig": "<T where T : Swift.Decodable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpStatusCode",
+        "printedName": "HttpStatusCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ok",
+            "printedName": "ok",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SDKHttpCore.HttpStatusCode.Type) -> SDKHttpCore.HttpStatusCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpStatusCode",
+                    "printedName": "SDKHttpCore.HttpStatusCode",
+                    "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SDKHttpCore.HttpStatusCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpStatusCode",
+                        "printedName": "SDKHttpCore.HttpStatusCode",
+                        "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SDKHttpCore14HttpStatusCodeO2okyA2CmF",
+            "mangledName": "$s11SDKHttpCore14HttpStatusCodeO2okyA2CmF",
+            "moduleName": "SDKHttpCore"
+          },
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SDKHttpCore.HttpStatusCode.Type) -> SDKHttpCore.HttpStatusCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpStatusCode",
+                    "printedName": "SDKHttpCore.HttpStatusCode",
+                    "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SDKHttpCore.HttpStatusCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpStatusCode",
+                        "printedName": "SDKHttpCore.HttpStatusCode",
+                        "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11SDKHttpCore14HttpStatusCodeO11unavailableyA2CmF",
+            "mangledName": "$s11SDKHttpCore14HttpStatusCodeO11unavailableyA2CmF",
+            "moduleName": "SDKHttpCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SDKHttpCore.HttpStatusCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HttpStatusCode",
+                    "printedName": "SDKHttpCore.HttpStatusCode",
+                    "usr": "s:11SDKHttpCore14HttpStatusCodeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore14HttpStatusCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11SDKHttpCore14HttpStatusCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "SDKHttpCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11SDKHttpCore14HttpStatusCodeO8rawValueSivp",
+            "mangledName": "$s11SDKHttpCore14HttpStatusCodeO8rawValueSivp",
+            "moduleName": "SDKHttpCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11SDKHttpCore14HttpStatusCodeO8rawValueSivg",
+                "mangledName": "$s11SDKHttpCore14HttpStatusCodeO8rawValueSivg",
+                "moduleName": "SDKHttpCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11SDKHttpCore14HttpStatusCodeO",
+        "mangledName": "$s11SDKHttpCore14HttpStatusCodeO",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkSessionManager",
+        "printedName": "NetworkSessionManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkSessionManager",
+                "printedName": "SDKHttpCore.NetworkSessionManager",
+                "usr": "c:@M@SDKHttpCore@objc(cs)NetworkSessionManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSessionConfiguration",
+                "printedName": "Foundation.URLSessionConfiguration",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSURLSessionConfiguration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore21NetworkSessionManagerC13configurationACSo25NSURLSessionConfigurationC_tcfc",
+            "mangledName": "$s11SDKHttpCore21NetworkSessionManagerC13configurationACSo25NSURLSessionConfigurationC_tcfc",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkSessionManager",
+                "printedName": "SDKHttpCore.NetworkSessionManager",
+                "usr": "c:@M@SDKHttpCore@objc(cs)NetworkSessionManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SDKHttpCore@objc(cs)NetworkSessionManager(im)init",
+            "mangledName": "$s11SDKHttpCore21NetworkSessionManagerCACycfc",
+            "moduleName": "SDKHttpCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "data",
+            "printedName": "data(with:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.HTTPURLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HTTPURLResponse",
+                            "printedName": "Foundation.HTTPURLResponse",
+                            "usr": "c:objc(cs)NSHTTPURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore21NetworkSessionManagerC4data4with10completiony10Foundation10URLRequestV_yAG4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s11SDKHttpCore21NetworkSessionManagerC4data4with10completiony10Foundation10URLRequestV_yAG4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "urlSession",
+            "printedName": "urlSession(_:didReceive:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLAuthenticationChallenge",
+                "printedName": "Foundation.URLAuthenticationChallenge",
+                "usr": "c:objc(cs)NSURLAuthenticationChallenge"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AuthChallengeDisposition",
+                        "printedName": "Foundation.URLSession.AuthChallengeDisposition",
+                        "usr": "c:@E@NSURLSessionAuthChallengeDisposition"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.URLCredential?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "URLCredential",
+                            "printedName": "Foundation.URLCredential",
+                            "usr": "c:objc(cs)NSURLCredential"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@SDKHttpCore@objc(cs)NetworkSessionManager(im)URLSession:didReceiveChallenge:completionHandler:",
+            "mangledName": "$s11SDKHttpCore21NetworkSessionManagerC03urlD0_10didReceive17completionHandlerySo12NSURLSessionC_So28NSURLAuthenticationChallengeCySo0k4AuthM11DispositionV_So15NSURLCredentialCSgtctF",
+            "moduleName": "SDKHttpCore",
+            "objc_name": "URLSession:didReceiveChallenge:completionHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SDKHttpCore@objc(cs)NetworkSessionManager",
+        "mangledName": "$s11SDKHttpCore21NetworkSessionManagerC",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SessionManager",
+            "printedName": "SessionManager",
+            "usr": "s:11SDKHttpCore14SessionManagerP",
+            "mangledName": "$s11SDKHttpCore14SessionManagerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HttpCore",
+        "printedName": "HttpCore",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(with:manager:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpCore",
+                "printedName": "SDKHttpCore.HttpCore",
+                "usr": "c:@M@SDKHttpCore@objc(cs)HttpCore"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SessionManager",
+                "printedName": "SDKHttpCore.SessionManager",
+                "hasDefaultArg": true,
+                "usr": "s:11SDKHttpCore14SessionManagerP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11SDKHttpCore04HttpB0C4with7managerAC10Foundation3URLV_AA14SessionManager_ptcfc",
+            "mangledName": "$s11SDKHttpCore04HttpB0C4with7managerAC10Foundation3URLV_AA14SessionManager_ptcfc",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HttpCore",
+                "printedName": "SDKHttpCore.HttpCore",
+                "usr": "c:@M@SDKHttpCore@objc(cs)HttpCore"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SDKHttpCore@objc(cs)HttpCore(im)init",
+            "mangledName": "$s11SDKHttpCore04HttpB0CACycfc",
+            "moduleName": "SDKHttpCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(params:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpParams",
+                "printedName": "SDKHttpCore.HttpParams",
+                "usr": "s:11SDKHttpCore10HttpParamsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<SDKHttpCore.HttpResponse<Foundation.Data>, SDKHttpCore.HttpError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpResponse",
+                        "printedName": "SDKHttpCore.HttpResponse<Foundation.Data>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:11SDKHttpCore12HttpResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpError",
+                        "printedName": "SDKHttpCore.HttpError",
+                        "usr": "s:11SDKHttpCore9HttpErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore04HttpB0C7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVy10Foundation4DataVGAA0C5ErrorVGctF",
+            "mangledName": "$s11SDKHttpCore04HttpB0C7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVy10Foundation4DataVGAA0C5ErrorVGctF",
+            "moduleName": "SDKHttpCore",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "request",
+            "printedName": "request(params:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HttpParams",
+                "printedName": "SDKHttpCore.HttpParams",
+                "usr": "s:11SDKHttpCore10HttpParamsV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<SDKHttpCore.HttpResponse<τ_0_0>, SDKHttpCore.HttpError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<SDKHttpCore.HttpResponse<τ_0_0>, SDKHttpCore.HttpError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpResponse",
+                        "printedName": "SDKHttpCore.HttpResponse<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:11SDKHttpCore12HttpResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HttpError",
+                        "printedName": "SDKHttpCore.HttpError",
+                        "usr": "s:11SDKHttpCore9HttpErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore04HttpB0C7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVyxGAA0C5ErrorVGctSeRzlF",
+            "mangledName": "$s11SDKHttpCore04HttpB0C7request6params10completionyAA0C6ParamsV_ys6ResultOyAA0C8ResponseVyxGAA0C5ErrorVGctSeRzlF",
+            "moduleName": "SDKHttpCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
+            "sugared_genericSig": "<R where R : Swift.Decodable>",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@SDKHttpCore@objc(cs)HttpCore",
+        "mangledName": "$s11SDKHttpCore04HttpB0C",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "HttpRequest",
+            "printedName": "HttpRequest",
+            "usr": "s:11SDKHttpCore11HttpRequestP",
+            "mangledName": "$s11SDKHttpCore11HttpRequestP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SDKHttpCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SessionManager",
+        "printedName": "SessionManager",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "data",
+            "printedName": "data(with:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLRequest",
+                "printedName": "Foundation.URLRequest",
+                "usr": "s:10Foundation10URLRequestV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data?, Foundation.HTTPURLResponse?, Swift.Error?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.Data?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Data",
+                            "printedName": "Foundation.Data",
+                            "usr": "s:10Foundation4DataV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.HTTPURLResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "HTTPURLResponse",
+                            "printedName": "Foundation.HTTPURLResponse",
+                            "usr": "c:objc(cs)NSHTTPURLResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Error?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11SDKHttpCore14SessionManagerP4data4with10completiony10Foundation10URLRequestV_yAG4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "mangledName": "$s11SDKHttpCore14SessionManagerP4data4with10completiony10Foundation10URLRequestV_yAG4DataVSg_So17NSHTTPURLResponseCSgs5Error_pSgtctF",
+            "moduleName": "SDKHttpCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : SDKHttpCore.SessionManager>",
+            "sugared_genericSig": "<Self where Self : SDKHttpCore.SessionManager>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11SDKHttpCore14SessionManagerP",
+        "mangledName": "$s11SDKHttpCore14SessionManagerP",
+        "moduleName": "SDKHttpCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpError.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 160,
+      "value": "\"DataTask failed with the following error: \""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpError.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 2,
+      "value": "\"\nat line: \""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpError.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 2,
+      "value": "\"\nin method: \""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpError.swift",
+      "kind": "StringLiteral",
+      "offset": 359,
+      "length": 2,
+      "value": "\"\nof file: \""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpError.swift",
+      "kind": "StringLiteral",
+      "offset": 383,
+      "length": 73,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 4,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 4,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 198,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Entities\/HttpStatusCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 223,
+      "length": 4,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Manager\/NetworkSessionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 167,
+      "length": 21,
+      "value": "\"SDKHttpCore.NetworkSessionManager\""
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/Manager\/NetworkSessionManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1372,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/SDKHttpCore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 451,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/raulmax319\/Developer\/sdkhttpcore\/Sources\/SDKHttpCore\/Lib\/SDKHttpCore.swift",
+      "kind": "StringLiteral",
+      "offset": 157,
+      "length": 8,
+      "value": "\"SDKHttpCore.HttpCore\""
+    }
+  ]
+}
